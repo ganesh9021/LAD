@@ -4,9 +4,9 @@ import logconfig from "../config/dbconfig";
 import { SendLogData } from "../config/wslog.js";
 import { OlabsPage } from "english-olabsnxtg-library";
 import QuizPopupContent from "./QuizPopupContent";
-import TheoryMidContent from "./TheoryMidContent";
+import ProcedureMidContent from "./ProcedureMidContent.js";
 
-const TheoryPage = () => {
+const ProcedurePage = () => {
   const { sendJsonMessage } = useWebSocket(logconfig.logurl, { share: true });
   return (
     <OlabsPage
@@ -19,7 +19,7 @@ const TheoryPage = () => {
       RSM_procedure_tt="Procedure"
       RSM_vivavoce_tt="Viva voce"
       RSM_ok="OK"
-      M_midcontent_comp={<TheoryMidContent />}
+      M_midcontent_comp={<ProcedureMidContent />}
       RSM_Intruc_popup_title_string="Instructions for quiz"
       RSM_QuizPopupContent_comp={<QuizPopupContent />}
       WS_sendJsonMessage={sendJsonMessage}
@@ -30,4 +30,4 @@ const TheoryPage = () => {
   );
 };
 
-export default TheoryPage;
+export default ProcedurePage;

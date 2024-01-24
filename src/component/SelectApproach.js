@@ -16,6 +16,7 @@ const SelectApproach = () => {
       HQ_quittext="Are you sure you want to quit?"
       M_midheight="90%"
       RSM_theory_tt="Theory"
+      RSM_procedure_tt="Procedure"
       RSM_vivavoce_tt="Viva voce"
       RSM_ok="OK"
       M_midcontent_comp={<SelectApproachMaincontent />}

@@ -10,6 +10,7 @@ import { v4 as uuid } from "uuid";
 import axios from "axios";
 import SelectApproach from "./component/SelectApproach";
 import SawASeed from "./component/SawASeed";
+import ProcedurePage from "./component/ProcedurePage";
 
 const App = () => {
   const [ip, setIP] = useState("");
@@ -66,6 +67,7 @@ const App = () => {
         element={<SawASeed />}
       />
       <Route exact path="/theory" element={<TheoryPage />} />
+      <Route exact path="/procedure" element={<ProcedurePage />} />
       <Route exact path="/quiz" element={<MathsQuiz />} />
     </Routes>
   );

@@ -2,7 +2,10 @@ import React from "react";
 
 const TheoryMidContent = () => {
   return (
-    <div className="p-3 scrollbar-primary" style={{ overflow: "auto" }}>
+    <div
+      className="p-3 scrollbar-primary"
+      style={{ overflow: "auto", width: "100%" }}
+    >
       <div className="subheading">Objective</div>
       <div className="content">
         <ul>
